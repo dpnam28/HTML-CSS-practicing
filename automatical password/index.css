@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: #002339;
+    color: #fff;
+}
+
+.container{
+    margin: 150px auto 0 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container h1{
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.container h1 span{
+    color: #019f55;
+    border-bottom: 4px solid #019f55;
+}
+
+.auto-pass{
+    display: flex;
+    background-color: #fff;
+    justify-content: space-between;
+    width: 40%;
+    min-width: 500px;
+    padding: 20px 14px;
+    border-radius: 3px;
+    margin-top: 30px;
+}
+
+.auto-pass > input{
+    flex: 1;
+    outline: none;
+    border: none;
+    font-size: 17px;
+}
+
+.auto-pass > button{
+    outline: none;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+#copy{
+    color: #019f55;
+    font-size: 20px;
+}
+
+.generate{
+    width: 20%;
+    min-width: 200px;
+    background-color: #019f55;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    font-size: 14px;
+    padding: 15px 12px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.generate > i{
+    font-size: 20px;
+}
