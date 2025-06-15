@@ -1,0 +1,65 @@
+@use "components/variables";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.container {
+  @include variables.background;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 12%;
+  margin-left: 10%;
+
+  h3 {
+    font-weight: 400;
+    font-size: 4vmin;
+  }
+
+  h1 {
+    margin: 30px 0 10px;
+    font-size: 4vmax;
+  }
+
+  span {
+    margin: 10px 0;
+    color: #61b752;
+  }
+
+  #{&}__input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+    height: 50px;
+    min-width: 400px;
+    background-color: #fff;
+    margin-top: 40px;
+
+    button {
+        outline: none;
+        border: none;
+        background-color: #61b752;
+        cursor: pointer;
+        width: 70px;
+        height: 50px;
+        img {
+            width: 30px;
+            font-size: 10px;
+      }
+    }
+
+    input {
+      padding: 10px 18px;
+      outline: none;
+      border: none;
+      font-size: 17px;
+    }
+  }
+}
