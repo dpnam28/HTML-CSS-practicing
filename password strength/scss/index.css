@@ -1,0 +1,87 @@
+.pass-weak {
+  border-color: red;
+  color: red;
+}
+
+.pass-medium {
+  border-color: orange;
+  color: orange;
+}
+
+.pass-strong {
+  border-color: lightgreen;
+  color: lightgreen;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  color: #fff;
+  background: #201f21;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.container .pass {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  position: relative;
+  width: 45%;
+  max-width: 400px;
+  justify-content: space-between;
+  border: 1px solid #fff;
+  padding: 20px;
+}
+.container .pass__input {
+  border: none;
+  outline: none;
+  font-size: 3vmin;
+  color: #fff;
+  background: transparent;
+  text-align: right center;
+}
+.container .pass__input::-moz-placeholder {
+  font-size: 2.5vmin;
+}
+.container .pass__input::placeholder {
+  font-size: 2.5vmin;
+}
+.container .pass__btn {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.container .pass__show {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  position: absolute;
+  bottom: -38px;
+  font-size: 3vmin;
+  color: #fff !important;
+}
+.container .pass__show .check {
+  transform: scale(1.4);
+  margin-right: 10px;
+}
+.container .pass__message {
+  position: absolute;
+  font-size: 3vmin;
+  bottom: -30px;
+  transform: translateY(40px);
+  display: none;
+}/*# sourceMappingURL=index.css.map */

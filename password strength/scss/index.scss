@@ -1,0 +1,89 @@
+@mixin flex-center($direct) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: $direct;
+}
+
+@mixin pass-status($color){
+  border-color: $color;
+  color: $color;
+}
+
+.pass-weak{
+  @include pass-status(red);
+}
+.pass-medium{
+  @include pass-status(orange);
+}
+.pass-strong{
+  @include pass-status(lightgreen);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  color: #fff;
+  background: #201f21;
+  @include flex-center(column);
+
+  .pass {
+    @include flex-center(row);
+    position: relative;
+    width: 45%;
+    max-width: 400px;
+    justify-content: space-between;
+    border: 1px solid #fff;
+    padding: 20px;
+
+    &__input {
+      border: none;
+      outline: none;
+      font-size: 3vmin;
+      color: #fff;
+      background: transparent;
+      text-align: right center;
+      &::placeholder{
+        font-size: 2.5vmin;
+      }
+    }
+
+    &__btn {
+      width: 3rem;
+      height: 3rem;
+      border-radius: 50%;
+      border: none;
+      outline: none;
+      cursor: pointer;
+    }
+
+    &__show{
+      @include flex-center(row);
+      position: absolute;
+      bottom: -38px;
+      font-size: 3vmin;
+      color: #fff !important;
+
+      .check{
+        transform: scale(1.4);
+        margin-right: 10px
+      }
+    }
+
+    &__message {
+      position: absolute;
+      font-size: 3vmin;
+      bottom: -30px;
+      transform: translateY(40px);
+      display: none;
+    }
+    
+  }
+}
