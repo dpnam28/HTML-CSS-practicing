@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(#f44336, #730228);
+  display: flex;
+  justify-content: center;
+}
+.container .drop-down {
+  width: 33%;
+  min-width: 300px;
+  height: 80px;
+  margin-top: 200px;
+}
+.container .drop-down .selected {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 15px 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.container .drop-down .selected img {
+  width: 12px;
+  transition: transform 0.5s;
+}
+.container .drop-down .list {
+  width: 100%;
+  height: 300px;
+  list-style: none;
+  border-radius: 8px;
+}
+.container .drop-down .list .option {
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  height: 16.6666666667%;
+  background: rgba(255, 255, 255, 0.5);
+  outline: none;
+  border: none;
+}
+.container .drop-down .list .option:nth-child(1) {
+  animation: rotateMenu 0.5s 120ms ease-in-out forwards;
+}
+.container .drop-down .list .option:nth-child(2) {
+  animation: rotateMenu 0.5s 240ms ease-in-out forwards;
+}
+.container .drop-down .list .option:nth-child(3) {
+  animation: rotateMenu 0.5s 360ms ease-in-out forwards;
+}
+.container .drop-down .list .option:nth-child(4) {
+  animation: rotateMenu 0.5s 480ms ease-in-out forwards;
+}
+.container .drop-down .list .option:nth-child(5) {
+  animation: rotateMenu 0.5s 600ms ease-in-out forwards;
+}
+.container .drop-down .list .option:nth-child(6) {
+  animation: rotateMenu 0.5s 720ms ease-in-out forwards;
+}
+.container .drop-down .list .option:nth-last-child(1) {
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+.container .drop-down .list .option:nth-child(1) {
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+}
+.container .drop-down .list .option:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+}
+.container .drop-down .list .option img {
+  width: 25px;
+}
+.container .drop-down .list .option p {
+  margin-left: 30px;
+  font-size: 1rem;
+}
+
+.disable {
+  display: none;
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
+
+@keyframes rotateMenu {
+  0% {
+    transform: rotateX(-90deg);
+  }
+  70% {
+    transform: rotateX(20deg);
+  }
+  100% {
+    transform: rotateX(0deg);
+  }
+}/*# sourceMappingURL=index.css.map */
